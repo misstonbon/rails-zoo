@@ -25,3 +25,510 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 18ms (Views: 7.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:13:25 -0700
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:13:35 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 534ms (Views: 532.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:21:48 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/tanjastroble/Desktop/breakweek-work/rails-zoo/app/assets/config
+  /Users/tanjastroble/Desktop/breakweek-work/rails-zoo/app/assets/images
+  /Users/tanjastroble/Desktop/breakweek-work/rails-zoo/app/assets/javascripts
+  /Users/tanjastroble/Desktop/breakweek-work/rails-zoo/app/assets/stylesheets
+  /Users/tanjastroble/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/tanjastroble/.rvm/gems/ruby-2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/tanjastroble/.rvm/gems/ruby-2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/tanjastroble/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/tanjastroble/Desktop/breakweek-work/rails-zoo/node_modules):
+    4:     <title>Zoo</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1019021601617903285_70316726701140'
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:22:15 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3010ms (Views: 3001.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:22:20 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animal.new" for 127.0.0.1 at 2017-10-01 22:27:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/animal.new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/animal/new" for 127.0.0.1 at 2017-10-01 22:27:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/animal/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:27:29 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:28:09 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 36.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:32:00 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:32:02 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:32:54 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (62.1ms)
+  Rendered animals/new.html.erb within layouts/application (63.8ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:33:17 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (5.2ms)
+  Rendered animals/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:35:08 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (5.5ms)
+  Rendered animals/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 56ms (Views: 42.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:35:10 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (5.7ms)
+  Rendered animals/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2017-10-01 22:35:56 -0700
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JmpaW8JWaFgVYy63K1uwTCBYZF880gXzk0c4XCTrS03XGim1yw7owoy+j2x9/gLgn7zKfVVUgfGFI816yTJWjA==", "animal"=>{"name"=>"Dog", "species"=>"Canis lupus familiaris", "age"=>"2"}, "commit"=>"Create Animal"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "animals" ("name", "species", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Dog"], ["species", "Canis lupus familiaris"], ["age", 2], ["created_at", "2017-10-02 05:35:56.336267"], ["updated_at", "2017-10-02 05:35:56.336267"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:35:56 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:38:00 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AnimalsController::Books):
+  
+app/controllers/animals_controller.rb:6:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:38:10 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AnimalsController::Books):
+  
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:38:11 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AnimalsController::Books):
+  
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:41:25 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 50ms (Views: 41.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:41:56 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (5.6ms)
+  Rendered animals/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2017-10-01 22:42:14 -0700
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"icZCbfK5YLURW3N8ucy/zWGCwlyes+wQ6LhoLdi0v854tjGD++HgL4iG0qfvaQ1h3mZsfvc1aBL+3J0LNW2iDw==", "animal"=>{"name"=>"Lucifer ", "species"=>"Canis lupus familiaris", "age"=>"1"}, "commit"=>"Create Animal"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "animals" ("name", "species", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lucifer "], ["species", "Canis lupus familiaris"], ["age", 1], ["created_at", "2017-10-02 05:42:14.064006"], ["updated_at", "2017-10-02 05:42:14.064006"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:42:14 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:43:31 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2017-10-01 22:43:32 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (9.0ms)
+  Rendered animals/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 22:49:45 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 51ms (Views: 42.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:52:03 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:52:44 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:52:55 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:53:04 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2017-10-01 22:54:04 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2017-10-01 22:54:47 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2017-10-01 22:54:48 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:54:51 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/1/edit" for 127.0.0.1 at 2017-10-01 22:58:40 -0700
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/edit.html.erb within layouts/application
+  Rendered animals/_form.html.erb (7.1ms)
+  Rendered animals/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 69ms (Views: 53.9ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/animals/1" for 127.0.0.1 at 2017-10-01 22:58:47 -0700
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jSCXgunjZLZC9Sx7vvRHGCb6CDYpVenm6PBHRr8eV7x8UORs4LvkLNsojaDoUfW0mR6mFEDTbeT+lLJgUsdKfQ==", "animal"=>{"name"=>"Muffin", "species"=>"Canis lupus familiaris", "age"=>"2"}, "commit"=>"Update Animal", "id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/animals_controller.rb:31:in `update'
+Started PATCH "/animals/1" for 127.0.0.1 at 2017-10-01 22:59:26 -0700
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jSCXgunjZLZC9Sx7vvRHGCb6CDYpVenm6PBHRr8eV7x8UORs4LvkLNsojaDoUfW0mR6mFEDTbeT+lLJgUsdKfQ==", "animal"=>{"name"=>"Muffin", "species"=>"Canis lupus familiaris", "age"=>"2"}, "commit"=>"Update Animal", "id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "animals" SET "name" = $1, "updated_at" = $2 WHERE "animals"."id" = $3[0m  [["name", "Muffin"], ["updated_at", "2017-10-02 05:59:26.148880"], ["id", 1]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 9.4ms)
+
+
+  
+NameError (undefined local variable or method `animal' for #<AnimalsController:0x007f9776c10358>
+Did you mean?  @animal):
+  
+app/controllers/animals_controller.rb:32:in `update'
+Started PATCH "/animals/1" for 127.0.0.1 at 2017-10-01 22:59:52 -0700
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jSCXgunjZLZC9Sx7vvRHGCb6CDYpVenm6PBHRr8eV7x8UORs4LvkLNsojaDoUfW0mR6mFEDTbeT+lLJgUsdKfQ==", "animal"=>{"name"=>"Muffin", "species"=>"Canis lupus familiaris", "age"=>"2"}, "commit"=>"Update Animal", "id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/animals/1
+Completed 302 Found in 15ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 22:59:52 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 23:04:07 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 39.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/animals/1/edit" for 127.0.0.1 at 2017-10-01 23:04:09 -0700
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/edit.html.erb within layouts/application
+  Rendered animals/_form.html.erb (7.2ms)
+  Rendered animals/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/animals/1" for 127.0.0.1 at 2017-10-01 23:04:18 -0700
+Processing by AnimalsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TnJX+Wu+p2CEqm1ElUIuU3KzOn+a00KpXRkf1S+1vva/AiQXYuYn+h13zJ/D55z/zVeUXfNVxqtLferzwmyjNw==", "id"=>"1"}
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/animals_controller.rb:38:in `destroy'
+Started GET "/animals/1" for 127.0.0.1 at 2017-10-01 23:06:03 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 58ms (Views: 40.2ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/animals/1" for 127.0.0.1 at 2017-10-01 23:06:06 -0700
+Processing by AnimalsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1qFQWxn46e3WNi4Jfy2QpQSCDQftzq8RvLfkSCJtk94n0SO1EKBpd0/rj9IpiCIJu2ajJYRIKxOq0xFuz7SOHw==", "id"=>"1"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "animals" WHERE "animals"."id" = $1[0m  [["id", 1]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 23:06:06 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 23:06:47 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2017-10-01 23:06:48 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 23:06:52 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-01 23:07:08 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY created_at DESC[0m
+  Rendered animals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2017-10-01 23:07:10 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
